@@ -1,0 +1,31 @@
+{
+  "name": "rebirth",
+  "version": "0.0.0",
+  "description": "Restart a node process from within itself",
+  "author": "silverwind <me@silverwind.io> (https://github.com/silverwind)",
+  "repository": "silverwind/rebirth",
+  "license": "BSD-2-clause",
+  "bugs": "https://github.com/silverwind/rebirth/issues",
+  "homepage": "https://github.com/silverwind/rebirth",
+  "main": "rebirth.js",
+  "files": [
+    "rebirth.js"
+  ],
+  "keywords": [
+    "process",
+    "restart",
+    "reload",
+    "reboot",
+    "self",
+    "itself"
+  ],
+  "dependencies": {
+    "util-extend": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.0.17",
+    "grunt-shell": "^1.1.1",
+    "grunt-contrib-jshint": "^0.11.0"
+  }
+}
