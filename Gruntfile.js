@@ -47,9 +47,9 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("update", ["shell:update", "shell:modules"]);
-    grunt.registerTask("patch",  ["jshint", "shell:modules", "shell:test", "bump", "shell:push", "shell:publish"]);
-    grunt.registerTask("minor",  ["jshint", "shell:modules", "shell:test", "bump:minor", "shell:push", "shell:publish"]);
-    grunt.registerTask("major",  ["jshint", "shell:modules", "shell:test", "bump:major", "shell:push", "shell:publish"]);
+    grunt.registerTask("patch",  ["jshint", "shell:modules", "bump", "shell:push", "shell:publish"]);
+    grunt.registerTask("minor",  ["jshint", "shell:modules", "bump:minor", "shell:push", "shell:publish"]);
+    grunt.registerTask("major",  ["jshint", "shell:modules", "bump:major", "shell:push", "shell:publish"]);
     grunt.registerTask("jshint", ["jshint"]);
 
     grunt.loadNpmTasks("grunt-bump");

@@ -5,7 +5,7 @@ The restarting is done by spawning a detached child of the current process and s
 
 #### Notes:
 - The call to `rebirth()` should be conditional. Otherwise, the process can end up in a restart loop.
-- Standard streams will be inherited by default. When running in a terminal, this means stdout/stderr will still print to that terminal after a restart. If you don't care about these streams, set `opts.stdio = 'ignore'`
+- Standard streams will be inherited by default. When running in a terminal, this means stdout/stderr will still print to that terminal after a restart. If you don't care about these streams, set `opts.stdio = 'ignore'`.
 - Does not yet work on Windows.
 
 ## Installation
@@ -18,12 +18,11 @@ $ npm install --save rebirth
 var rebirth = require('rebirth');
 
 rebirth();
-// process restarts completely
+// process restarts
 ```
 
 ## API
 ### rebirth([options])
-- `options` {Object} Options object. Takes any options accepted by `child_process.spawn`.
-
+- `options` {Object} Takes any options accepted by `child_process.spawn`.
 
 © 2015 [silverwind](https://github.com/silverwind), distributed under BSD licence
