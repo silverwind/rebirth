@@ -7,6 +7,7 @@ module.exports = function rebirth(opts) {
     opts = extend({
         cwd      : process.cwd,
         detached : true,
+        env      : process.env,
         stdio    : "inherit"
     }, opts);
 
