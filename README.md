@@ -1,7 +1,7 @@
 # rebirth [![NPM version](https://img.shields.io/npm/v/rebirth.svg?style=flat)](https://www.npmjs.org/package/rebirth) [![Dependency Status](http://img.shields.io/david/silverwind/rebirth.svg?style=flat)](https://david-dm.org/silverwind/rebirth)
 > Restart a node process from within itself
 
-The restarting is done by spawning a detached copy of the current process and subsequently ending the running process. The new child will be orphaned and parented to PID 1 (init/systemd) on Unix.
+The restarting is done by spawning a detached copy of the current process and subsequently ending the running process. The new child will be orphaned and parented to PID 1 (init/systemd).
 
 #### Notes:
 - Only works on Linux.
@@ -25,4 +25,4 @@ rebirth();
 ### rebirth([options])
 - `options` {Object} Takes any options accepted by `child_process.spawn`.
 
-© 2015 [silverwind](https://github.com/silverwind), distributed under BSD licence
+© [silverwind](https://github.com/silverwind), distributed under BSD licence
