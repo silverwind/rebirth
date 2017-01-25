@@ -1,4 +1,5 @@
-# rebirth [![NPM version](https://img.shields.io/npm/v/rebirth.svg?style=flat)](https://www.npmjs.org/package/rebirth) [![Dependency Status](http://img.shields.io/david/silverwind/rebirth.svg?style=flat)](https://david-dm.org/silverwind/rebirth)
+# rebirth
+[![](https://img.shields.io/npm/v/rebirth.svg?style=flat)](https://www.npmjs.org/package/rebirth) [![](https://img.shields.io/npm/dm/rebirth.svg)](https://www.npmjs.org/package/rebirth) [![](https://api.travis-ci.org/silverwind/rebirth.svg?style=flat)](https://travis-ci.org/silverwind/rebirth)
 > Restart a node process from within itself
 
 The restarting is done by spawning a detached copy of the current process and subsequently ending the running process. The new child will be orphaned and parented to PID 1 (init/systemd).
