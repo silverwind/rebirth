@@ -6,7 +6,7 @@ const path = require("path");
 const os = require("os");
 const tempFile = path.join(os.tmpdir(), "rebirth-child");
 
-const child = spawn("node", ["test-child.js"], {cwd: process.cwd()});
+const child = spawn(process.execPath, ["test-child.js"], {cwd: process.cwd()});
 const pid = child.pid;
 
 setTimeout(() => {
