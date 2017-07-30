@@ -12,7 +12,7 @@
     "test": "make test"
   },
   "files": [
-    "rebirth.js"
+    "index.js"
   ],
   "keywords": [
     "process",
