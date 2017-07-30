@@ -1,5 +1,9 @@
 lint:
-	eslint --ignore-pattern *.min.js *.js
+	eslint *.js
+
+test:
+	$(MAKE) lint
+	node test.js
 
 publish:
 	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi

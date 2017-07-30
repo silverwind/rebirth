@@ -6,6 +6,12 @@
   "repository": "silverwind/rebirth",
   "license": "BSD-2-Clause",
   "main": "rebirth.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "make test"
+  },
   "files": [
     "rebirth.js"
   ],
@@ -16,8 +22,5 @@
     "reboot",
     "self",
     "itself"
-  ],
-  "dependencies": {
-    "util-extend": "^1.0.3"
-  }
+  ]
 }

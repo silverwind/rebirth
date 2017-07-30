@@ -2,11 +2,7 @@
 [![](https://img.shields.io/npm/v/rebirth.svg?style=flat)](https://www.npmjs.org/package/rebirth) [![](https://img.shields.io/npm/dm/rebirth.svg)](https://www.npmjs.org/package/rebirth) [![](https://api.travis-ci.org/silverwind/rebirth.svg?style=flat)](https://travis-ci.org/silverwind/rebirth)
 > Restart a node process from within itself
 
-The restarting is done by spawning a detached copy of the current process and subsequently ending the running process. The new child will be orphaned and parented to PID 1 (init/systemd).
-
-#### Notes:
-- To detect if a process was reborn, check if `process.env.REBORN` is `'1'`;
-- Standard streams will be inherited by default. When running in a terminal, this means stdout/stderr will still print to that terminal after a restart. If you don't care about these streams, set `opts.stdio = 'ignore'`.
+Restarting is done by spawning a detached copy of the current process and subsequently ending the running process. The new child will be orphaned and parented to PID 1 (init/systemd/launchd).
 
 ## Installation
 ```
@@ -20,6 +16,10 @@ const rebirth = require('rebirth');
 rebirth();
 // process restarts
 ```
+
+#### Notes:
+- To detect if a process was reborn, check if `process.env.REBORN` is `'1'`;
+- Standard streams will be inherited by default. When running in a terminal, this means stdout/stderr will still print to that terminal after a restart. If you don't care about these streams, set `opts.stdio = 'ignore'`.
 
 ## API
 ### rebirth([options])
