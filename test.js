@@ -1,20 +1,10 @@
 "use strict";
 
-process.title = "phoenix";
-console.log([
-  "  _/|       |\\_",
-  " /  |       |  \\",
-  "|    \\     /    |",
-  "|  \\ /     \\ /  |",
-  "| \\  |     |  / |",
-  "| \\ _\\_/^\\_/_ / |  I am (re)born with PID " + process.pid,
-  "|    --\\//--    |",
-  " \\_  \\     /  _/   Respawning in 10 seconds. Kill me with 'killall phoenix'",
-  "   \\__  |  __/",
-  "      \\ _ /",
-  "     _/   \\_",
-  "    / _/|\\_ \\",
-  "     /  |  \\",
-  "      / v \\",
-].join("\n"));
-setTimeout(require("./"), 10000);
+const rebirth = require(".");
+
+if (process.env.REBORN === "1") {
+  process.stdout.write("\nsuccessfully reborn");
+  process.exit(0);
+}
+
+rebirth();

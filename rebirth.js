@@ -1,13 +1,13 @@
 "use strict";
 
-var extend = require("util-extend");
-var spawn  = require("child_process").spawn;
+const extend = require("util-extend");
+const spawn  = require("child_process").spawn;
 
 module.exports = function rebirth(opts) {
   opts = extend({
-    cwd      : process.cwd,
+    cwd      : process.cwd(),
     detached : true,
-    env      : process.env,
+    env      : Object.assign(process.env, {REBORN: 1}),
     stdio    : "inherit"
   }, opts);
 
