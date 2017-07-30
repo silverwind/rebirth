@@ -5,7 +5,6 @@
   "author": "silverwind <me@silverwind.io> (https://github.com/silverwind)",
   "repository": "silverwind/rebirth",
   "license": "BSD-2-Clause",
-  "main": "rebirth.js",
   "engines": {
     "node": ">=4"
   },
