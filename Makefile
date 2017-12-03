@@ -1,5 +1,5 @@
 lint:
-	eslint *.js
+	node_modules/.bin/eslint *.js
 
 test:
 	$(MAKE) lint
@@ -11,9 +11,9 @@ publish:
 	npm publish
 
 update:
-	ncu -ua
+	node_modules/.bin/updates -u
 	rm -rf node_modules
-	npm install
+	yarn
 
 npm-patch:
 	npm version patch

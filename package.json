@@ -21,5 +21,9 @@
     "reboot",
     "self",
     "itself"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "updates": "^1.3.0"
+  }
 }
