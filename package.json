@@ -1,6 +1,6 @@
 {
   "name": "rebirth",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Restart a node process from within itself",
   "author": "silverwind <me@silverwind.io> (https://github.com/silverwind)",
   "repository": "silverwind/rebirth",
