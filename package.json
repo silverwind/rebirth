@@ -6,7 +6,7 @@
   "repository": "silverwind/rebirth",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "test": "make test"
@@ -23,7 +23,8 @@
     "itself"
   ],
   "devDependencies": {
-    "eslint": "^4.12.1",
-    "updates": "^1.3.0"
+    "eslint": "^4.19.1",
+    "eslint-config-silverwind": "^1.0.42",
+    "updates": "^3.0.0"
   }
 }
